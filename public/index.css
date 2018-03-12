@@ -1,0 +1,49 @@
+.style {
+    width:  1000px;
+    margin: 0 auto;
+}
+div.kissor {
+    height: 15px;
+}
+.kozep {
+    text-align: center;
+    color: #59eba3;
+}
+.cimsor {
+    font-weight: bold;
+    background-color: #920620;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px black;
+}
+.left {
+    text-align:left;
+}
+
+.klikk {
+    cursor: pointer;
+}
+.b1 {
+    box-shadow: 1px 1px 7px black;
+}
+.f2 {
+    background-color: rgba(200,255,200,0.7);
+}
+.f2.ng-invalid {
+    background-color: rgba(195,50,10,0.7);
+}
+
+body {
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+ table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}

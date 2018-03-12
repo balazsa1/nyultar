@@ -1,0 +1,47 @@
+<div class="kozep">
+	<br><br>
+	<center>
+	<div class="style w3-container w3-round-large w3-brown">
+		<br>
+		<form name="ujnyulform" class="w3-container w3-round-large f2">
+			<select ng-model="nyul.nyultipus" required>
+				<option value="">Válasszon nyúl típust!
+				<option value="anyanyúl">anyanyúl
+				<option value="baknyúl">baknyúl
+				<option value="hízónyúl nőstény">hízónyúl nőstény
+				<option value="hízónyúl bak">hízónyúl bak
+			</select>
+			<br>
+			<div ng-if="nyul.nyultipus" class="w3-container w3-round-large f2">
+				<br>Nyúlszám <!--nyúl objektum adatai-->
+				<input type="text" ng-model="nyul.nyulszam" required>
+				<br>Születési dátum
+				<input type="Date" ng-model="nyul.datum" required>
+				<br>Válasszon ketrecszámot!
+				<select type="text" ng-model="nyul.ketrecszam" required>
+					<option ng-repeat="x in ketrecek">
+						Ketrecszám:{{x.ketrecszam}}
+						Kategória:{{x.kategoria}}
+						Férőhelyszám:{{x.ferohelyszam}}
+						Szabad kapacitás:{{x.ferohelyszam}}	
+					</option>
+				</select>
+				
+			</div>
+		</form>
+		<br>
+		
+		<div ng-if="ujnyulform.$valid">
+			
+			<button ng-if="ujnyulform.$valid" ng-click="nyulkuld()"ng-click="ketrecfrissit()">Elküld
+			</button>
+			<div ng-if="nyul_nyulszam_hiba" class="w3-red w3-medium">
+			Nyúlszám hiba!
+			<br>
+			Nem rögzíthető!
+			<br>
+			Adjon meg új nyúlszámot!
+			</div>
+		</div>
+	</div>
+</div>

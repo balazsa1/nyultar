@@ -1,0 +1,40 @@
+<br><br><br><br><center>
+
+<table  class="w3-medium">
+	<thead>
+		<tr>
+			<th>Nyúlszám</th>
+			<th>Nyúltípus</th>
+			<th>Születési dátum</th>
+			<th>Ketrecszám</th>
+		</tr>
+	</thead>
+	<tr ng-repeat="x in nyulak"> 
+		<td>{{x.nyulszam}}
+		</td>
+		<td>{{x.nyultipus}} 
+		</td>
+		<td>{{x.datum|date:'yyyy.MM.dd'}} 
+		</td>
+		<td>{{x.ketrecszam}}
+		</td>
+	</tr>
+</table>
+<br>
+<table class="w3-medium">
+	<thead>
+		<tr>
+			<th>Ketrecszám</th>
+			<th>Kategória</th>
+			<th>Férőhelyszám</th>
+		</tr>
+	</thead>
+	<tr ng-repeat="x in ketrecek"> 
+		<td>{{x.ketrecszam}}
+		</td>
+		<td>{{x.kategoria}} 
+		</td>
+		<td>{{x.ferohelyszam}} 
+		</td>
+	</tr>
+</table>		
