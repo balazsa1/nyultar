@@ -4,7 +4,8 @@
   "description": "SzámPont course example",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon npm start"
+    "test": "nodemon npm start",
+	"start": "node app.js"
   },
   "author": "Dr. Németh Tamás",
   "license": "MIT",
